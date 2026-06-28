@@ -1,11 +1,10 @@
 # minispeech_onnx 
 
-MiniSpeech の 2-stage TTS を **コンポーネント単位**で ONNX 化したもの。
-音響モデル(encoder)とボコーダ(vocoder)を独立したグラフとして書き出し、
-任意の encoder × vocoder を組み合わせて推論できる。
+エッジデバイス向けの日本語 TTS(ONNX 推論)。
+MiniSpeechEncoder→Vocos で textから音声を生成する。
 
-> **デフォルト構成は MiniSpeechEncoder + Vocos。** ボコーダのメインは **Vocos** で、
-> HiFi-GAN / MB-iSTFT は同一 mel 契約で学習した**比較・評価用**(既定置き換えではない)。
+> **デフォルト構成は MiniSpeechEncoder + Vocos。** ボコーダは **Vocos** で、
+> HiFi-GAN / MB-iSTFT は比較・評価用。
 
 ```
 text ──(g2p)──▶ phoneme_ids ──▶ [ *_encoder.onnx ] ──▶ mel ──▶ [ *_vocoder.onnx ] ──▶ audio (22.05kHz)
