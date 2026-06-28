@@ -55,8 +55,7 @@ DEFAULT_ENCODER = "enc_d192_encoder_slim_fp16.onnx"
 DEFAULT_VOCODER = "vocos_d256_n512_vocoder_slim_fp16.onnx"
 BENCH_RUNS = 10
 
-# デプロイ用 fp16 を encoder は enc_onnx/、vocoder は vocoder_onnx/ に置く。
-# ファイル名のみ指定された場合はこの順でサブディレクトリも探索する (cwd 非依存)。
+
 SEARCH_DIRS = ("", "enc_onnx", "vocoder_onnx")
 
 
