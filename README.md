@@ -11,8 +11,7 @@ text ──(g2p)──▶ phoneme_ids ──▶ [ *_encoder.onnx ] ──▶ mel
 ```
 
 > 設計は [piper](https://github.com/rhasspy/piper) / [piper-plus](https://github.com/ahoennecke/piper-plus)
-> (VITS / MB-iSTFT-VITS2) を参考にしている。g2p は **piper-plus-g2p** の JA-only パス
-> (OpenJTalk ベース・intersperse なし) を使用。同梱モデルは encoder・vocoder とも
+> (VITS / MB-iSTFT-VITS2) を参考にしている。g2p は **piper-plus-g2p** を使用。同梱モデルは encoder・vocoder とも
 > **JSUT コーパス basic5000**(単一話者日本語、CC-BY-SA 4.0)で学習したもの。
 
 ## 目次
