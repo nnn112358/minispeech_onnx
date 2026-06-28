@@ -1,4 +1,4 @@
-# minispeech_onnx — ONNX 推論モデル (現行版)
+# minispeech_onnx 
 
 MiniSpeech の 2-stage TTS を **コンポーネント単位**で ONNX 化したもの。
 音響モデル(encoder)とボコーダ(vocoder)を独立したグラフとして書き出し、
