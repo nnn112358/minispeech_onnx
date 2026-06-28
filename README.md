@@ -112,7 +112,17 @@ HiFi-GAN / MB-iSTFT は同一 mel 契約で学習した比較・評価用(既定
 | `mbistft_n16`      | MB-iSTFT | 1.45 M  | 2.9 MB  | 45.4 ms  |
 | `mbistft_n64`      | MB-iSTFT | 1.40 M  | 2.8 MB  | 28.3 ms  |
 
+### パラメータ数・推論時間 (グラフ)
 
+上表を可視化したもの(ONNX 実測, CPU, fp16)。Encoder は青、Vocoder は
+Vocos=橙(メイン)・HiFi-GAN/MB-iSTFT=灰(比較用)。
+
+![パラメータ数 (M)](docs/param_bar.png)
+
+![CPU 推論時間 (ms)](docs/infer_bar.png)
+
+> パラメータ数が少なくても推論時間は比例しない(例: HiFi-GAN は 1.46M でも 244.6ms)。
+> 同程度のサイズなら Vocos が最速で、エッジ用途に向く。
 
 ## インターフェイス
 
