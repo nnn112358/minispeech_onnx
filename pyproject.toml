@@ -3,6 +3,8 @@ name = "mini-jtts-onnx"
 version = "0.1.0"
 description = "ONNX-only Japanese TTS inference (text -> mel -> wav), PyTorch 不要"
 readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
 requires-python = ">=3.11"  # piper-plus-g2p==0.2.0 が >=3.11 を要求
 dependencies = [
     "onnxruntime",
