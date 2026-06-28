@@ -9,17 +9,9 @@
 #     "pyopenjtalk-plus==0.4.1.post8",
 # ]
 # ///
-"""ONNX-only TTS inference (text -> encoder.onnx -> mel -> vocoder.onnx -> wav).
+"""ONNX TTS inference (text -> encoder.onnx -> mel -> vocoder.onnx -> wav).
 
-PyTorch 不要。依存は onnxruntime + numpy + soundfile + piper-plus-g2p のみで、
-すべて **uv が自動解決** する (上の PEP 723 インラインメタデータ)。
-任意の encoder × vocoder ONNX を組み合わせて推論できる。
-
-g2p は piper-plus-g2p (PyPI) の JA-only パス (intersperse なし) を使い、
-先頭に BOS=1 を付与する。特定の venv への依存はない。
-
-デプロイ用 fp16 は encoder=enc_onnx/ vocoder=vocoder_onnx/ に置く。
---encoder / --vocoder はファイル名のみでもこれらを探索する。
+依存は onnxruntime + numpy + soundfile + piper-plus-g2p のみで、
 
 実行 (依存は初回に自動インストール):
   uv run synth_onnx.py --text "おはようございます" --out out.wav
