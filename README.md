@@ -199,5 +199,11 @@ CPU = threads=1 / GPU = RTX 3070 Laptop (numpy in/out の H2D/D2H 込み):
 | mbistft_n16 | **17.9** | 19.6 | 0.78 | **0.60** | 0.15% |
 | mbistft_n64 | **11.2** | 11.9 | **0.41** | 0.47 | 0.08% |
 
+## 作者・ライセンス
+
+- 製作者: **[nnn112358](https://github.com/nnn112358)**
+- ライセンス: **MIT**(`Copyright (c) 2026 nnn112358`、[LICENSE](LICENSE) 参照)
+- 学習データ: JSUT コーパス basic5000(CC-BY-SA 4.0)
+
 
 
